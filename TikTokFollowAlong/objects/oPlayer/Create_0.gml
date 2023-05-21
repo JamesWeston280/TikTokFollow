@@ -7,3 +7,5 @@ vsp = 0;
 grv = 0.6;
 
 grounded = false;
+
+pickupsCount = 0;

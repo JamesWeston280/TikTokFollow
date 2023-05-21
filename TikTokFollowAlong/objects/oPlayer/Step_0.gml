@@ -31,3 +31,23 @@ if place_meeting(x,y+vsp,oWall)
 x += hsp;
 y += vsp;
 
+//animations
+
+if (hsp = 0 && vsp = 0)
+{
+	sprite_index = sIdle;
+}
+else if (hsp > 0 && vsp = 0)
+{
+	sprite_index = sWalk;
+	image_xscale = 1;
+}
+else if (hsp < 0 && vsp = 0)
+{
+	sprite_index = sWalk;
+	image_xscale = -1;
+}
+if (vsp != 0)
+{
+	sprite_index = sJump;
+}
